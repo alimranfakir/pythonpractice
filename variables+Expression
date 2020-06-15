@@ -1,0 +1,41 @@
+x=2  // assignment statement 
+x=2+3 // assignment statement + expression
+
+
+               -------------Operator	Example	Meaning	Result------------------------
+==	a == b	Equal to	True if the value of a is equal to the value of b
+False otherwise
+!=	a != b	Not equal to	True if a is not equal to b
+False otherwise
+<	a < b	Less than	True if a is less than b
+False otherwise
+<=	a <= b	Less than or equal to	True if a is less than or equal to b
+False otherwise
+>	a > b	Greater than	True if a is greater than b
+False otherwise
+>=	a >= b	Greater than or equal to	True if a is greater than or equal to b
+False otherwise
+
+---------------------Operator precedence rules-----------------------------------
+
+parenthesis>power>multiplication>addition> Left to right
+
+
+
+
+
+
+-------------------CODE---------------------------
+
+mystring = "hello"
+myfloat = 10.0
+myint = 20
+
+
+if mystring == "hello":
+    print("String: ",mystring)
+if isinstance(myfloat, float) and myfloat == 10.0:    //The isinstance() function returns True if the specified
+                                                      // object is of the specified type, otherwise False.
+    print("Float: " , myfloat)
+if isinstance(myint, int) and myint == 20:
+    print("Integer: ", myint)
