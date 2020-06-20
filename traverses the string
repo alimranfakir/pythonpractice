@@ -1,0 +1,8 @@
+fruit =['apple']
+cout = 0                          #there are another way to traverse
+while cout<len(fruit):            #for char in fruit:
+                                   #print(char)
+    store =fruit[cout]
+    cout =cout+1
+
+    print(store)
