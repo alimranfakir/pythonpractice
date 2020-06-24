@@ -1,0 +1,11 @@
+#String comparison
+word = input("Enter a word")
+try:
+  if word < 'banana':
+    print('Your word,' + word + ', comes before banana.')
+  elif word > 'banana':
+    print('Your word,' + word + ', comes after banana.')
+
+
+except:
+    print('All right, bananas.')
