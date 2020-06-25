@@ -1,0 +1,18 @@
+data = 'imran.fakir.cse@ulab.edu.bd'
+#finding @  from data
+atpost=data.find('@')
+print(atpost)
+#finding edu from data
+education= data.find('edu')
+print(education)
+#finding dot from data after @
+dotfind =data.find('.',atpost)
+print(dotfind)
+#findiing dont after edu
+dotfind2 =data.find('.',education)
+print(dotfind2)
+
+#STRING SLICEING
+#increasing character upto .(dot) and printing the slice one
+string_Slice =data[atpost+1:dotfind]
+print(string_Slice)
