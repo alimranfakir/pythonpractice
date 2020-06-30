@@ -1,0 +1,12 @@
+newlist =list() #creat a list
+while True:
+ inp = int(input("Enter numbers:"))
+ if inp==00:break  #when input will be 00 it will stop exicution and return the calculation
+ #values =int(inp)
+ newlist.append(inp) #add input into lish
+ newlist.sort()  #sorting the values
+print(newlist)
+print('max:',max(newlist))
+print('min:',min(newlist))
+print("sum:",sum(newlist))
+print('average:',sum(newlist)/len(newlist))
