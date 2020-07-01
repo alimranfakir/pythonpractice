@@ -1,0 +1,14 @@
+#A string is a sequence of characters and a list is a sequence of values
+#we use splite() and double splite 
+#>infodata.txt>>From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008>>>
+
+fhand = open('infodata.txt')
+for line in fhand:                   #now fhand info has a iterator line it
+    line = line.rstrip()             #rstrip() removes all whitespaces from right side
+    if  not  line.startswith('From'):
+        continue                     #it will skip those sentences aren't strated with from
+    word=line.split()                #it will split all the data from line
+    emil=word[1]                     #email store the values of 'from space to next space'
+    pieces=emil.split('@')           #it will splite where is @ and end of the space
+    print(emil)
+    print(pieces)
