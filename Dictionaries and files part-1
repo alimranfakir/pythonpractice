@@ -1,0 +1,15 @@
+bag='brontosaurus' 
+str=dict()                            # declared dictionarie
+for bags in bag:
+    if bags not in str:            
+        str[bags]=1         
+    else: str[bags]= str[bags]+1
+print(str)
+
+#another simple way to count in dictionaries (optimize way)
+word = 'brontosaurus'
+d = dict()
+for c in word:
+    d[c] = d.get(c,0) + 1      #use get() for count
+print(d)
+print("r exist in word:",d.get('r',0),"times")    
