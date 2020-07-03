@@ -1,0 +1,21 @@
+#Dictionaries:arelike bags-no order
+#it's mutable
+bag = dict()                      #declare dictionarie
+bag['pen']= 2                     #we have bag where pen is a lebel/key and store the value 2
+bag['pages']=4
+bag['boot']=1
+bag['bottle']=1
+bag['headphone']=1
+bag['pen']=bag['pen']-1           #update the value
+print(bag)
+
+print(bag.values())               #check the values of dictionaries
+
+#print(bag['phone'])              #it will show error cz phone key is nor existing in bag
+
+#anathor way to declare dictionaries using curly bracket
+
+eng2sp = {'one': 'uno', 'two': 'dos', 'three': 'tres'}
+vals = list(eng2sp.values())
+print(eng2sp)
+print(vals)
