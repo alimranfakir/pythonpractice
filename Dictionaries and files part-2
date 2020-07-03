@@ -1,0 +1,12 @@
+fname = input('Enter the file name: ')
+try:
+    fhand = open(fname)
+except:
+    print('File cannot be opened:', fname)
+    exit()
+counts = dict()                             #call dictionarie function as dict()
+for line in fhand:                          #nested for noop
+    words = line.split()
+    for word in words:
+        counts[word]=counts.get(word,0)+1    #count words by get() method
+print(counts)
